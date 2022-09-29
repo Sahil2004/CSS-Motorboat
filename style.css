@@ -52,18 +52,38 @@ html, body {
 
 .windows {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   left: 0;
   right: 0;
-  top: -180px;
+  top: -200px;
   bottom: 0;
   margin: auto;
   height: 0;
   width: 0;
-  border-top: 100px solid #D6D6D6;
-  border-left: 400px solid transparent;
-  border-top-right-radius: 400px 100%;
+  border-left: 350px solid rgba(46, 134, 193, 0.5411764706);
+  border-top: 100px solid transparent;
   rotate: 4deg;
+}
+.windows::before {
+  content: "";
+  position: absolute;
+  left: -470px;
+  top: -100px;
+  border-bottom-left-radius: 100% 30%;
+  border-right: 120px solid rgba(46, 134, 193, 0.5411764706);
+  border-top: 100px solid transparent;
+}
+.windows::after {
+  content: "";
+  position: absolute;
+  left: -405px;
+  top: -125px;
+  height: 133px;
+  width: 4px;
+  rotate: 50deg;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  background-color: #7B7F82;
 }
 
 .blackPart {
