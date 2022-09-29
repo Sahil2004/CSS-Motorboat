@@ -53,7 +53,7 @@ html, body {
 .facingWindows {
   position: absolute;
   z-index: 4;
-  left: 0;
+  left: 134px;
   right: 0;
   top: -168px;
   bottom: 0;
@@ -87,7 +87,7 @@ html, body {
 }
 .facingWindows > .frontWindow {
   position: absolute;
-  left: -609px;
+  left: -610px;
   top: -140px;
   z-index: 3;
   width: 395px;
@@ -99,7 +99,7 @@ html, body {
 .backWindow {
   position: absolute;
   z-index: 4;
-  left: -32px;
+  left: 96px;
   right: 0;
   top: -235px;
   bottom: 0;
