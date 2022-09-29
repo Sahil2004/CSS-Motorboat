@@ -7,8 +7,6 @@ $waveColor: #b7b7b7;
 $whiteTopPart: #ededed;
 $whiteRightEngineSidePart: #e9e9e9;
 $whiteBackEngine: #e4e4e460;
-$mirrorLightColor: #F7F7F7;
-$mirrorDarkColor: #e6e6e6;
 $mirrorBoundary: #7B7F82;
 $mirrorBackground: #2e86c18a;
 
@@ -72,16 +70,6 @@ html, body {
 .windows {
     position: absolute;
     z-index: 4;
-    // left: -100px;
-    // right: 0;
-    // top: -190px;
-    // bottom: 0;
-    // margin: auto;
-    // height: 100px;
-    // width: 330px;
-    // border-top-right-radius: 100%;
-    // border-right: 4px solid $mirrorBoundary;
-    // border-top: 4px solid $mirrorBoundary;
     left: 0;
     right: 0;
     top: -200px;
@@ -97,9 +85,6 @@ html, body {
         position: absolute;
         left: -470px;
         top: -100px;
-        // height: 100px;
-        // width: 100px;
-        // background: $mirrorBackground;
         border-bottom-left-radius: 100% 30%;
         border-right: 120px solid $mirrorBackground;
         border-top: 100px solid transparent;
@@ -116,17 +101,16 @@ html, body {
         border-bottom-left-radius: 30%;
         background-color: $mirrorBoundary;
     }
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     left: -450px;
-    //     top: -110px;
-    //     width: 100px;
-    //     height: 20px;
-    //     border-top-right-radius: 100%;
-    //     // background-color: $mirrorBackground;
-    //     background-image: radial-gradient(circle at 82px -1px, blue 0, blue 101px, $mirrorBackground 40px);
-    // }
+    &>.frontWindow {
+        position: absolute;
+        left: -536px;
+        top: -131px;
+        z-index: 3;
+        width: 244px;
+        height: 130px;
+        background: linear-gradient(to left, $mirrorBackground,rgba(82, 149, 193, 0.541), $mirrorBackground);
+        transform:rotateY(81deg) rotateX(313deg) skewX(332deg) rotateZ(5deg);
+    }
 }
 
 .blackPart {
