@@ -50,12 +50,12 @@ html, body {
   border-top-right-radius: 10%;
 }
 
-.windows {
+.facingWindows {
   position: absolute;
   z-index: 4;
   left: 0;
   right: 0;
-  top: -200px;
+  top: -168px;
   bottom: 0;
   margin: auto;
   height: 0;
@@ -64,7 +64,7 @@ html, body {
   border-top: 100px solid transparent;
   rotate: 4deg;
 }
-.windows::before {
+.facingWindows::before {
   content: "";
   position: absolute;
   left: -470px;
@@ -73,7 +73,7 @@ html, body {
   border-right: 120px solid rgba(46, 134, 193, 0.5411764706);
   border-top: 100px solid transparent;
 }
-.windows::after {
+.facingWindows::after {
   content: "";
   position: absolute;
   left: -405px;
@@ -85,15 +85,51 @@ html, body {
   border-bottom-left-radius: 30%;
   background-color: #7B7F82;
 }
-.windows > .frontWindow {
+.facingWindows > .frontWindow {
   position: absolute;
-  left: -536px;
-  top: -131px;
+  left: -609px;
+  top: -140px;
   z-index: 3;
-  width: 244px;
+  width: 395px;
   height: 130px;
   background: linear-gradient(to left, rgba(46, 134, 193, 0.5411764706), rgba(82, 149, 193, 0.541), rgba(46, 134, 193, 0.5411764706));
-  transform: rotateY(81deg) rotateX(313deg) skewX(332deg) rotateZ(5deg);
+  transform: rotateY(81deg) rotateX(313deg) skewX(332deg) rotateZ(7deg);
+}
+
+.backWindow {
+  position: absolute;
+  z-index: 4;
+  left: -32px;
+  right: 0;
+  top: -235px;
+  bottom: 0;
+  margin: auto;
+  height: 0;
+  width: 0;
+  border-left: 350px solid rgba(46, 134, 193, 0.5411764706);
+  border-top: 100px solid transparent;
+  rotate: 4deg;
+}
+.backWindow::before {
+  content: "";
+  position: absolute;
+  left: -470px;
+  top: -100px;
+  border-bottom-left-radius: 100% 30%;
+  border-right: 120px solid rgba(46, 134, 193, 0.5411764706);
+  border-top: 100px solid transparent;
+}
+.backWindow::after {
+  content: "";
+  position: absolute;
+  left: -405px;
+  top: -125px;
+  height: 133px;
+  width: 4px;
+  rotate: 50deg;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  background-color: #7B7F82;
 }
 
 .blackPart {
